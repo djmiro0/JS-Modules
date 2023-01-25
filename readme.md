@@ -22,15 +22,6 @@ Link the `index.js` script to `index.html` inside `<head></head>` of our html do
 
 **Note**: If we want to use support for modules we need `type="module"`
 
-**HINT:**
-
-```html
-    <head>
-      ...
-    <script type="module" src="/index.js"></script>
-      ...
-    </head>
-```
 
 ## 2. Creating our `stringhelper` module.
 To build our functionality we would like to add **3 functions** inside the `stringhelper` module:
@@ -43,16 +34,6 @@ Add a new function inside `stringhelper.js` called `upperCaseFullString`. The fu
 
 > e.g fish becomes FISH.
 
-
-**HINT:**
-
-```javascript
-const functionName = (value) => {
-
-   return ...
-}
-```
-- Tip: `toUpperCase()`
 
 ### 2.2 Writing the full lowercase function   
 Add a new function inside `stringhelper.js` called `lowerCaseFullString`. The function takes in a string as parameter and returns a fully lowercased version of that string. 
@@ -70,20 +51,8 @@ Now that we have written the above functions we would like to be able to use the
 ### 3.1 export all functions using named exports
 Export all the above functions using named exports.  
 
-**HINT:** 
-
-```javascript
-export const functionName = (param) => {  
-
-}
-```
 ### 3.2 export all functions using default export
 Export all the above functions using `export default`.
-
-**HINT:** 
-```javascript
-export default {functionName1, functionName2};
-```
 
 
 ## 4. Wiring up functinality (Importing)
@@ -93,32 +62,13 @@ Now that we've created our module consisting of three functions. We would like t
 ### 4.1 Import the functions from `stringhelper.js` module
 Import the three functions needed to manipulate the input. 
 
-**HINT:** 
-```javascript
-import {functionName1, functionName2, functionName3} from './modules/moduleName.js'
-```
 
 ### 4.2 Query for all elements needed from the DOM.
 In order to read/set value of elements and to add eventlisteners we have to query for the DOM elements. Query for the buttons, inputfield and result.  
 
-**HINT:** 
-```javascript
-const result = document.querySelector('#result');
-const btnUppercase = document.querySelector('#btn-uppercase');
-               ....
-```
+
 ### 4.3 Add eventlistener to the buttons. 
 Add an eventlistener that listens for `click` event on the buttons. And add the applicable functionality inside the eventlistener. Make sure  `<p id="result"></p>` contains the result string when the button is pressed. 
-
-**HINT:** 
-```javascript
-btnUppercase.addEventListener('click', (e)=> {
-    //call logic here
-
-    result.innerText = "RESULT OF FUNCTION"; 
-})
-```
-
 
 ## 5. Testing the application 
 - Test your application and see if it works.
