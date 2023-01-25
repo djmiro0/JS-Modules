@@ -1,0 +1,10 @@
+.result-box {
+    border: 1px solid lightgray;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:5px;
+    font-size:2rem;
+    
+}
+
